@@ -1,0 +1,93 @@
+import type { Portfolio, User, Lead } from '../types'
+
+export const mockUser: User = {
+  id: 'mock-user-1',
+  email: 'demo@sacredcore.ai',
+  full_name: 'Demo User',
+  tier: 'pro',
+  credits: 1240,
+  created_at: '2024-01-01T00:00:00Z',
+}
+
+export const mockPortfolios: Portfolio[] = [
+  {
+    id: 'portfolio-1',
+    user_id: 'mock-user-1',
+    company_name: 'Apex Digital',
+    company_url: 'https://apexdigital.io',
+    logo_url: undefined,
+    industry: 'Technology',
+    dna_profile_id: 'dna-001',
+    created_at: '2024-01-10T00:00:00Z',
+    updated_at: '2024-01-15T00:00:00Z',
+  },
+  {
+    id: 'portfolio-2',
+    user_id: 'mock-user-1',
+    company_name: 'Luminary Health',
+    company_url: 'https://luminaryhealth.com',
+    logo_url: undefined,
+    industry: 'Healthcare',
+    dna_profile_id: undefined,
+    created_at: '2024-01-12T00:00:00Z',
+    updated_at: '2024-01-18T00:00:00Z',
+  },
+  {
+    id: 'portfolio-3',
+    user_id: 'mock-user-1',
+    company_name: 'Forge & Co',
+    company_url: 'https://forgeandco.com',
+    logo_url: undefined,
+    industry: 'Manufacturing',
+    dna_profile_id: 'dna-003',
+    created_at: '2024-01-14T00:00:00Z',
+    updated_at: '2024-01-20T00:00:00Z',
+  },
+  {
+    id: 'portfolio-4',
+    user_id: 'mock-user-1',
+    company_name: 'Solstice Studios',
+    company_url: 'https://solsticestudios.co',
+    logo_url: undefined,
+    industry: 'Creative Agency',
+    dna_profile_id: undefined,
+    created_at: '2024-01-16T00:00:00Z',
+    updated_at: '2024-01-22T00:00:00Z',
+  },
+]
+
+export const mockLeads: Lead[] = [
+  {
+    id: 'lead-1',
+    user_id: 'mock-user-1',
+    company_name: 'Nexus Corp',
+    company_url: 'https://nexuscorp.io',
+    pain_score: 87,
+    pain_summary: 'Struggling with brand differentiation in a crowded SaaS market.',
+    pitch_draft: undefined,
+    status: 'new',
+    created_at: '2024-01-20T00:00:00Z',
+  },
+  {
+    id: 'lead-2',
+    user_id: 'mock-user-1',
+    company_name: 'Verdant Foods',
+    company_url: 'https://verdantfoods.com',
+    pain_score: 64,
+    pain_summary: 'Inconsistent social media presence across channels.',
+    pitch_draft: 'We can help you unify your voice across every platform...',
+    status: 'pitched',
+    created_at: '2024-01-21T00:00:00Z',
+  },
+  {
+    id: 'lead-3',
+    user_id: 'mock-user-1',
+    company_name: 'Ironclad Legal',
+    company_url: 'https://ironcladlegal.com',
+    pain_score: 91,
+    pain_summary: 'Zero digital marketing strategy, entirely reliant on referrals.',
+    pitch_draft: undefined,
+    status: 'new',
+    created_at: '2024-01-22T00:00:00Z',
+  },
+]
